@@ -1,6 +1,7 @@
 ﻿
 
 
+
 namespace Education.Domain;
 
 
@@ -16,10 +17,10 @@ public class Teacher : Student
 
     }
 
-    public void CourseAssigned(Course courseNumber)
+    public void AssignCourse(Course course)
     {
-        if (!CourseResponsibility.Contains(courseNumber))
-            CourseResponsibility.Add(courseNumber);
+        if (!CourseResponsibility.Contains(course))
+            CourseResponsibility.Add(course);
 
 
     }
@@ -29,9 +30,6 @@ public class Teacher : Student
         return $"Lärare:{FirstName} {LastName} - {PhoneNumber} -{SocialSecurityNumber} - Adress: {Address?.AddressLine}, Postnummer: {Address?.PostalCode}, Ort: {Address?.Region} {SubjectKnowledge}";
     }
 
-    internal void CourseAssigned(string courseNumber)
-    {
-        throw new NotImplementedException();
-    }
+
 }
 
