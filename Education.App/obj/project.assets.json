@@ -5,6 +5,10 @@
       "Education.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Education.Domain": "1.0.0",
+          "Education.Persistence": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Education.Application.dll": {}
         },
@@ -15,14 +19,21 @@
       "Education.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-        "dependencies": {
-          "Education.Application": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Education.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/Education.Domain.dll": {}
+        }
+      },
+      "Education.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Education.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Education.Persistence.dll": {}
         }
       }
     }
@@ -37,6 +48,11 @@
       "type": "project",
       "path": "../Education.Domain/Education.Domain.csproj",
       "msbuildProject": "../Education.Domain/Education.Domain.csproj"
+    },
+    "Education.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Education.Persistence/Education.Persistence.csproj",
+      "msbuildProject": "../Education.Persistence/Education.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
