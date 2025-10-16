@@ -27,7 +27,7 @@ public class Teacher : Student
 
     public override string ToString()
     {
-        return $"Lärare:{FirstName} {LastName} - {PhoneNumber} -{SocialSecurityNumber} - Adress: {Address?.AddressLine}, Postnummer: {Address?.PostalCode}, Ort: {Address?.Region} {SubjectKnowledge}";
+        return $"Lärare: {FirstName} {LastName} - {PhoneNumber} -{SocialSecurityNumber} - Adress: {Address?.AddressLine}, Postnummer: {Address?.PostalCode}, Ort: {Address?.Region} {SubjectKnowledge}";
     }
 
 

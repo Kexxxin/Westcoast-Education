@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "Education.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Education.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Education.Domain.dll": {}
+        }
+      },
+      "Education.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Education.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Education.Persistence.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Education.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Education.Domain/Education.Domain.csproj",
+      "msbuildProject": "../Education.Domain/Education.Domain.csproj"
+    },
+    "Education.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Education.Persistence/Education.Persistence.csproj",
+      "msbuildProject": "../Education.Persistence/Education.Persistence.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "Education.Domain >= 1.0.0",
+      "Education.Persistence >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Kexin\\.nuget\\packages\\": {}
@@ -31,7 +66,14 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Kexin\\Desktop\\Programmering\\Westcoast-Education\\Education.Domain\\Education.Domain.csproj": {
+              "projectPath": "C:\\Users\\Kexin\\Desktop\\Programmering\\Westcoast-Education\\Education.Domain\\Education.Domain.csproj"
+            },
+            "C:\\Users\\Kexin\\Desktop\\Programmering\\Westcoast-Education\\Education.Persistence\\Education.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Kexin\\Desktop\\Programmering\\Westcoast-Education\\Education.Persistence\\Education.Persistence.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

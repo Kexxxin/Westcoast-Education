@@ -1,0 +1,17 @@
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.csproj.AssemblyReference.cache
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.AssemblyInfoInputs.cache
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.AssemblyInfo.cs
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.csproj.CoreCompileInputs.cache
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Application.deps.json
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Application.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Application.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Domain.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Persistence.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Domain.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\bin\Debug\net9.0\Education.Persistence.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Educatio.27989F8E.Up2Date
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\refint\Education.Application.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\ref\Education.Application.dll

@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
+using Education.Domain.Models;
 
 namespace Education.Application.Interfaces
 {
-    public interface ICourseManager
+    public interface ICourseService
     {
-        void AddCourse(Course C);
-        void ListCourses();
-        void ListAllStudents();
-        void Save();
-        void Load();
+        void SaveCourse(Course course);
+        List<Course> LoadCourse();
+
+
+
     }
 }

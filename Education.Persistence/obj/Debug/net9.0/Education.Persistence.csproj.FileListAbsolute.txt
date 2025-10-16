@@ -1,0 +1,11 @@
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\bin\Debug\net9.0\Education.Persistence.deps.json
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\bin\Debug\net9.0\Education.Persistence.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\bin\Debug\net9.0\Education.Persistence.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.AssemblyInfoInputs.cache
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.AssemblyInfo.cs
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\refint\Education.Persistence.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.pdb
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\ref\Education.Persistence.dll

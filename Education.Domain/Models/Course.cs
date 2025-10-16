@@ -11,7 +11,6 @@ public class Course
     public DateTime CourseEnd { get; set; }
     public bool IsClassroom { get; set; }
     public List<Student> Students { get; } = new List<Student>();
-    public List<Teacher> Teachers { get; set; } = new List<Teacher>();
 
     protected Course(string courseNumber, string courseName, string courseLength, DateTime courseStart, DateTime courseEnd)
     {
@@ -24,23 +23,15 @@ public class Course
     }
 
 
-    public void AddTeacher(Teacher t)
-    {
-        if (!Teachers.Contains(t))
-        {
-            Teachers.Add(t);
-            t.AssignCourse(this);
-
-        }
-    }
     public void AddStudent(Student s)
     {
+        if (s == null) return;
         Students.Add(s);
     }
     public override string ToString()
     {
         string EducationType = IsClassroom ? "Klassrum" : "Distans";
-        return $"{CourseNumber} {CourseName} ({EducationType} Längd: {CourseLength} Kursstart: {CourseStart} Kursavslutning: {CourseEnd})";
+        return $"{CourseNumber} {CourseName} {EducationType} Längd: {CourseLength} Kursstart: {CourseStart} Kursavslutning: {CourseEnd})";
     }
 
 
