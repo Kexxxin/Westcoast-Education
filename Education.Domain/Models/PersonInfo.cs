@@ -3,7 +3,7 @@
 namespace Education.Domain;
 
 
-public class PersonalInfo
+public class PersonInfo
 {
 
     public string? FirstName { get; set; }
@@ -12,7 +12,7 @@ public class PersonalInfo
     protected string? SocialSecurityNumber { get; }
     public Address? Address { get; set; } = new Address();
 
-    protected PersonalInfo(string firstName, string lastName, string phoneNumber, string socialSecurityNumber)
+    protected PersonInfo(string firstName, string lastName, string phoneNumber, string socialSecurityNumber)
     {
         FirstName = firstName;
         LastName = lastName;
@@ -20,12 +20,7 @@ public class PersonalInfo
         SocialSecurityNumber = socialSecurityNumber;
     }
 
-    public string PersonInfo()
-    {
-        return $"{FirstName} {LastName} {PhoneNumber}";
 
-
-    }
 
     public override string ToString()
     {

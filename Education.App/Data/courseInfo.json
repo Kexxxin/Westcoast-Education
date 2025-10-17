@@ -1,0 +1,20 @@
+[
+  {
+    "courseNumber": "A1",
+    "courseName": "Träslöjd",
+    "courseLength": "8 Veckor",
+    "courseStart": "2025-01-06T00:00:00",
+    "courseEnd": "2025-03-06T00:00:00",
+    "isClassroom": true,
+    "students": []
+  },
+  {
+    "courseNumber": "A4",
+    "courseName": "Biologi",
+    "courseLength": "16 Veckor",
+    "courseStart": "2025-10-09T00:00:00",
+    "courseEnd": "2026-02-12T00:00:00",
+    "isClassroom": false,
+    "students": []
+  }
+]

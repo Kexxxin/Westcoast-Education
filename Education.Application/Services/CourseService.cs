@@ -4,12 +4,15 @@ using System.Runtime.CompilerServices;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 using Education.Application.Interfaces;
+using Education.Domain;
+using Education.Persistence;
 
 public class CourseService : ICourseService
 {
-    private readonly string _path = path;
+    public List<Course> courses = new List<Course>();
+    private readonly string _path;
     private readonly FileStorage _fileStorage = new();
-    private readonly JsonSerializerOptions _options = new()
+    private static JsonSerializerOptions _options = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
@@ -17,32 +20,45 @@ public class CourseService : ICourseService
         PropertyNameCaseInsensitive = true
     };
 
-    public List<Course> FetchCourses()
+    public CourseService(string path)
     {
-        var json = _fileStorage.ReadJsonlist(_path);
+        _path = path;
+    }
+
+    public List<Course> GetCourses()
+    {
+        var json = _fileStorage.ReadJson(_path);
+
+        if (string.IsNullOrWhiteSpace(json))
+            return new List<Course>();
+
+
+
         var courses = JsonSerializer.Deserialize<List<Course>>(json, _options);
-        return courses ?? [];
+        return courses ?? new List<Course>();
+
+
+
     }
 
 
     public void AddCourse(Course course)
     {
+        if (course == null) return;
 
-        Courses = FetchCourses();
-        Courses.Add(course);
+        var courses = GetCourses();
+        courses.Add(course);
         SaveCourses(courses);
-        var json = _jsonStorage.Read(path);
-        var json = JsonSerializer.Serialize(Courses, _options);
-        _filestorage.WriteJson(_path, json);
+
     }
 
-    public void SaveCourse(Course course)
+    public void SaveCourses(List<Course> courses)
     {
         var json = JsonSerializer.Serialize(courses, _options);
-        _fileStorage.Write(_path, json);
+        _fileStorage.WriteJson(_path, json);
+
+
     }
-
-
 
 
 }

@@ -2,7 +2,7 @@
 
 namespace Education.Domain;
 
-public class Student : PersonalInfo
+public class Student : PersonInfo
 {
 
     public Student(string firstName, string lastName, string phoneNumber, string socialSecurityNumber, Address address) : base(firstName, lastName, phoneNumber, socialSecurityNumber)

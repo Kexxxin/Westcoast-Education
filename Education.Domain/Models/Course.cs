@@ -12,7 +12,7 @@ public class Course
     public bool IsClassroom { get; set; }
     public List<Student> Students { get; } = new List<Student>();
 
-    protected Course(string courseNumber, string courseName, string courseLength, DateTime courseStart, DateTime courseEnd)
+    public Course(string courseNumber, string courseName, string courseLength, DateTime courseStart, DateTime courseEnd)
     {
         CourseNumber = courseNumber;
         CourseName = courseName;
