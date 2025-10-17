@@ -8,7 +8,7 @@ using Education.Application.Interfaces;
 public class CourseService : ICourseService
 {
     private readonly string _path = path;
-    private readonly JsonStorage _jsonStorage = new();
+    private readonly FileStorage _fileStorage = new();
     private readonly JsonSerializerOptions _options = new()
     {
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
@@ -17,17 +17,29 @@ public class CourseService : ICourseService
         PropertyNameCaseInsensitive = true
     };
 
-    public Course GetCourses()
+    public List<Course> FetchCourses()
     {
+        var json = _fileStorage.ReadJsonlist(_path);
+        var courses = JsonSerializer.Deserialize<List<Course>>(json, _options);
+        return courses ?? [];
+    }
+
+
+    public void AddCourse(Course course)
+    {
+
+        Courses = FetchCourses();
+        Courses.Add(course);
+        SaveCourses(courses);
         var json = _jsonStorage.Read(path);
-        var course = JsonSerializer.Deserialize<Course>(json, _options);
-        return course;
+        var json = JsonSerializer.Serialize(Courses, _options);
+        _filestorage.WriteJson(_path, json);
     }
 
     public void SaveCourse(Course course)
     {
-        var json = JsonSerializer.Serialize(course, _options);
-        _jsonStorage.Write(_path, json);
+        var json = JsonSerializer.Serialize(courses, _options);
+        _fileStorage.Write(_path, json);
     }
 
 

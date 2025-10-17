@@ -9,8 +9,8 @@ namespace Education.Application.Interfaces
 {
     public interface ICourseService
     {
-        void SaveCourse(Course course);
-        List<Course> LoadCourse();
+        List<Course> FetchCourses();
+        void SaveCourses(List<Course> courses);
 
 
 
