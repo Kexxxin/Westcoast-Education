@@ -21,7 +21,7 @@ class Program
         var S1 = new Student("Ida", "Arnelund", "073-6524509", "2002-01-19", new Address { AddressLine = "Klocksvängen 34", PostalCode = "215 97", Region = "Eslöv" });
         var S2 = new Student("Kalle", "Helmund", "073-7652494", "1999-05-24", new Address { AddressLine = "Pelikanstigen 8", PostalCode = "280 90", Region = "Kävlinge" });
 
-        var C1 = new Course("A1", "Träslöjd", "8 Veckor", new DateTime(2025, 1, 6), new DateTime(2025, 3, 6)) { IsClassroom = true };
+        var C1 = new Course("A1", "Idrott", "8 Veckor", new DateTime(2025, 1, 6), new DateTime(2025, 3, 6)) { IsClassroom = true };
         var C2 = new Course("A4", "Biologi", "16 Veckor", new DateTime(2025, 10, 9), new DateTime(2026, 2, 12)) { IsClassroom = false };
 
         C1.AddStudent(S1);

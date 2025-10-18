@@ -46,7 +46,13 @@ public class CourseService : ICourseService
     {
         if (course == null) return;
 
-        var courses = GetCourses();
+        var currentCourses = GetCourses() ?? new List<Course>();
+        foreach (var c in currentCourses)
+        {
+            if (c.CourseNumber == course.CourseNumber)
+                return;
+        }
+
         courses.Add(course);
         SaveCourses(courses);
 
