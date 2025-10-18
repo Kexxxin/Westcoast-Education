@@ -1,20 +1,29 @@
 [
   {
-    "courseNumber": "A1",
+    "courseNumber": "A301",
     "courseName": "Träslöjd",
     "courseLength": "8 Veckor",
-    "courseStart": "2025-01-06T00:00:00",
-    "courseEnd": "2025-03-06T00:00:00",
+    "courseStart": "2025-01-06",
+    "courseEnd": "2025-03-06",
     "isClassroom": true,
     "students": []
   },
   {
-    "courseNumber": "A4",
+    "courseNumber": "A204",
     "courseName": "Biologi",
     "courseLength": "16 Veckor",
-    "courseStart": "2025-10-09T00:00:00",
-    "courseEnd": "2026-02-12T00:00:00",
+    "courseStart": "2025-10-01",
+    "courseEnd": "2026-02-12",
     "isClassroom": false,
+    "students": []
+  },
+  {
+    "courseNumber": "A107",
+    "courseName": "Matematik",
+    "courseLength": "24 Veckor",
+    "courseStart": "2025-03-12",
+    "courseEnd": "2025-09-15",
+    "isClassroom": true,
     "students": []
   }
 ]

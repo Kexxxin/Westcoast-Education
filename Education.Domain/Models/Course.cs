@@ -7,12 +7,12 @@ public class Course
     public string CourseNumber { get; set; }
     public string CourseName { get; set; }
     public string CourseLength { get; set; }
-    public DateTime CourseStart { get; set; }
-    public DateTime CourseEnd { get; set; }
+    public DateOnly CourseStart { get; set; }
+    public DateOnly CourseEnd { get; set; }
     public bool IsClassroom { get; set; }
-    public List<Student> Students { get; } = new List<Student>();
+    public List<Student> students { get; } = new List<Student>();
 
-    public Course(string courseNumber, string courseName, string courseLength, DateTime courseStart, DateTime courseEnd)
+    public Course(string courseNumber, string courseName, string courseLength, DateOnly courseStart, DateOnly courseEnd)
     {
         CourseNumber = courseNumber;
         CourseName = courseName;
@@ -23,15 +23,17 @@ public class Course
     }
 
 
+
+
     public void AddStudent(Student s)
     {
         if (s == null) return;
-        Students.Add(s);
+        students.Add(s);
     }
     public override string ToString()
     {
         string EducationType = IsClassroom ? "Klassrum" : "Distans";
-        return $"{CourseNumber} {CourseName} {EducationType} Längd: {CourseLength} Kursstart: {CourseStart} Kursavslutning: {CourseEnd})";
+        return $"{CourseNumber} - {CourseName} - {EducationType} - Längd: {CourseLength} - Kursstart: {CourseStart} - Kursavslutning: {CourseEnd}";
     }
 
 

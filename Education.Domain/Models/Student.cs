@@ -12,7 +12,7 @@ public class Student : PersonInfo
 
     public override string ToString()
     {
-        return $"Elev: {FirstName}{LastName} - {PhoneNumber}, Adress: {Address?.AddressLine}, Postnummer: {Address?.PostalCode}, Ort: {Address?.Region}";
+        return $"Elev: {FirstName} {LastName}, Adress: {Address?.AddressLine}, Postnummer: {Address?.PostalCode}, Ort: {Address?.Region}";
     }
 
 
