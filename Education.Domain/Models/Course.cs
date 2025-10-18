@@ -10,7 +10,6 @@ public class Course
     public DateOnly CourseStart { get; set; }
     public DateOnly CourseEnd { get; set; }
     public bool IsClassroom { get; set; }
-    public List<Student> students { get; } = new List<Student>();
 
     public Course(string courseNumber, string courseName, string courseLength, DateOnly courseStart, DateOnly courseEnd)
     {
@@ -22,14 +21,6 @@ public class Course
 
     }
 
-
-
-
-    public void AddStudent(Student s)
-    {
-        if (s == null) return;
-        students.Add(s);
-    }
     public override string ToString()
     {
         string EducationType = IsClassroom ? "Klassrum" : "Distans";
