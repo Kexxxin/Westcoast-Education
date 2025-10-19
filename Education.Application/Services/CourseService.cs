@@ -45,16 +45,18 @@ public class CourseService : ICourseService
     public void AddCourse(Course course)
     {
         if (course == null) return;
+        if (string.IsNullOrWhiteSpace(course.CourseNumber)) return;
 
         var currentCourses = GetCourses() ?? new List<Course>();
+
         foreach (var c in currentCourses)
         {
             if (c.CourseNumber == course.CourseNumber)
                 return;
         }
 
-        courses.Add(course);
-        SaveCourses(courses);
+        currentCourses.Add(course);
+        SaveCourses(currentCourses);
 
     }
 
