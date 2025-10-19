@@ -15,3 +15,4 @@ C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\o
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\refint\Education.Application.dll
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.pdb
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\ref\Education.Application.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Application\obj\Debug\net9.0\Education.Application.sourcelink.json

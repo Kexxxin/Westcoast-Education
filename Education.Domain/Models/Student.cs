@@ -5,9 +5,9 @@ namespace Education.Domain;
 public class Student : PersonInfo
 {
 
-    public Student(string firstName, string lastName, string phoneNumber, string socialSecurityNumber, Address address) : base(firstName, lastName, phoneNumber, socialSecurityNumber)
+    public Student(string firstName, string lastName, string phoneNumber, string socialSecurityNumber, Address address) : base(firstName, lastName, phoneNumber, socialSecurityNumber, address)
     {
-        Address = address;
+
     }
 
     public override string ToString()

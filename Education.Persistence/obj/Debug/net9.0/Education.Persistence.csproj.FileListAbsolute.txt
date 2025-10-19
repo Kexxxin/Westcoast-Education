@@ -9,3 +9,4 @@ C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\o
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\refint\Education.Persistence.dll
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.pdb
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\ref\Education.Persistence.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.Persistence\obj\Debug\net9.0\Education.Persistence.sourcelink.json

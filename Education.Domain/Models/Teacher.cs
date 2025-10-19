@@ -6,7 +6,7 @@ namespace Education.Domain;
 
 
 
-public class Teacher : Student
+public class Teacher : PersonInfo
 {
     public string? SubjectKnowledge { get; set; }
     public List<Course> CourseResponsibility { get; set; } = new();
