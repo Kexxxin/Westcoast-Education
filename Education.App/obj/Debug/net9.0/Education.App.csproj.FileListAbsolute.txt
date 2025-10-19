@@ -20,3 +20,4 @@ C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.App\obj\Debug
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.App\obj\Debug\net9.0\Education.App.pdb
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.App\obj\Debug\net9.0\Education.App.genruntimeconfig.cache
 C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.App\obj\Debug\net9.0\ref\Education.App.dll
+C:\Users\Kexin\Desktop\Programmering\Westcoast-Education\Education.App\obj\Debug\net9.0\Education.App.sourcelink.json
